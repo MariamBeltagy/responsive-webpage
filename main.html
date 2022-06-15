@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <!-- jQuery library -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <!-- Latest compiled JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <style>
+      .btn-sm{
+        max-width: fit-content;
+      }
+      body{
+        font-family: 'Poppins', sans-serif;
+      }
+      .txt-secondery{
+        color: #FF9900;
+      }
+      .btn-warning{
+        font-weight: 700;color: white;--bs-btn-color:#000;--bs-btn-bg:#FF9900;--bs-btn-border-color:#ffc107;--bs-btn-hover-color:#000;--bs-btn-hover-bg:#FFB900;--bs-btn-hover-border-color:#FFB900;--bs-btn-focus-shadow-rgb:217,164,6;--bs-btn-active-color:#000;--bs-btn-active-bg:#FFB900;--bs-btn-active-border-color:#FFB900;--bs-btn-active-shadow:inset 0 3px 5px rgba(0, 0, 0, 0.125);--bs-btn-disabled-color:#000;--bs-btn-disabled-bg:#FF9900;--bs-btn-disabled-border-color:#ffc107
+      }
+      .orangeC{
+        font-weight: 600;
+        color: #FF9900;
+      }
+      .btn-outline-light{
+        font-weight: 600;
+        color: #000;
+      }
+      .part3{
+        height: 25rem;
+        border-radius: 0 0 90% 90%;
+        background: linear-gradient(179.61deg, rgba(255, 255, 255, 0) 0.33%, rgba(253, 238, 227, 0.629) 99.67%);
+      }
+      .part5{
+        height: 25rem;
+        border-radius: 90% 90% 0 0;
+        background: linear-gradient(179.61deg,rgba(253, 238, 227, 0.629)  1.33%, rgba(255, 255, 255, 0.918) 98.67%);
+      }
+      .icon{
+        max-width: 4rem;
+      }
+      .container-fluid{
+        height: fit-content;
+      }
+      .part5 .circle{
+        height: .8rem;
+        width: .8rem;
+        position: relative;
+        left: 3.9rem;
+        border-radius: 100%;
+        background:white;
+      }
+      .part5 .circle2{
+        height: .6rem;
+        width: .6rem;
+        position: relative;
+        left: 3.5rem;
+        top: .3rem;
+        border-radius: 100%;
+        background:white;
+      }
+      .rect{
+        background-image: url(img/rectangle.png);
+        background-repeat: no-repeat;
+        height: 2.18rem;
+        width: 2.19rem;
+        text-align: center;
+        padding-top: .5rem;
+      }
+      .fa-check{
+        color: white;
+      }
+      .blue{
+        color:#567592;
+      }
+      .center{
+        text-align: center;
+      }
+      .avatar{
+        margin-right: 25rem
+      }
+      .part5 .rounded-pill{
+        max-width: 13rem;
+        min-height: 4rem;
+        padding-left: 1rem;
+        padding-top: .5rem;
+        height: auto;
+        position: relative;
+        left: 4rem;
+        top: 1rem;
+      }
+      .card{
+        border:#000;
+        padding-top: 5rem;
+      }
+      .line{
+        height: 1px;
+        width: 80%;
+        background: rgba(188, 208, 229, 0.496913);
+      }
+    </style>
+    <div>
+    <nav class="navbar navbar-expand-lg col m-3">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold mx-5 my-3 ps-5" href="#">
+          <img src="img/Bitmap.png" alt="" width="30" height="24" class="d-inline-block align-text-top me-1">GrowWithMe</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-5 ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Link</a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <button class="btn btn-outline-light p-auto me-3" type="submit">Sign In</button>
+            <button class="btn btn-warning p-auto me-3" type="submit">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid my-5">
+      <div class="row p-5 m-auto">
+        <div class="col-sm-7 align-self-center">
+            <div class="row fs-1 fw-bold mb-2">The Design Thinking superpowers</div>
+            <div class="row text-muted"><p>Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p></div>
+            <div class="row m-auto">
+              <button class="btn btn-sm btn-warning mx-1 font-weight-bolder">Get started</button>
+              <button class="btn btn-sm orangeC"><i class="fa fa-play"></i><u class="p-1">watch the video</u></button>
+            </div>
+         </div>
+        <div class="col-sm align-self-center my-3">
+          <img src="img/people.png" class=" img-fluid" alt="...">
+        </div>
+      </div>
+    </div>
+
+    <div class=" fs-5 fw-bold container text-center">
+      We design tools to unveil<br> your superpowers
+    </div>
+
+    <div class="container-fluid py-5 ps-sm-5 part3 align-items-center">
+      <div class="row m-auto align-items-center">
+        
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 my-3">
+          <div class="row"><img src="img/icon1.png" class="img-fluid icon" alt="..."></div>
+          <div class="row fw-bold m-auto pt-2">First click tests</div>
+          <div class="row m-auto pt-1">While most people enjoy casino gambling,</div>
+        </div>
+        
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 my-3">
+          <div class="row"><img src="img/icon2.png" class="img-fluid icon" alt="..."></div>
+          <div class="row fw-bold m-auto pt-2">Design surveys</div>
+          <div class="row m-auto pt-1">Sports betting, lottery and bingo playing for the fun</div>
+        </div>
+        
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 my-3">
+          <div class="row"><img src="img/icon3.png" class="img-fluid icon" alt="..."></div>
+          <div class="row fw-bold m-auto pt-2">Preference tests</div>
+          <div class="row m-auto pt-1">The Myspace page defines the individual.</div>
+        </div>
+        
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 my-3">
+          <div class="row"><img src="img/icon4.png" class="img-fluid icon" alt="..."></div>
+          <div class="row fw-bold m-auto pt-2">Five second tests</div>
+          <div class="row m-auto pt-1">Personal choices and the overall personality of the person. </div>
+        </div>
+      </div>
+      <div class="row my-5">
+        <div class="col d-flex justify-content-center">
+          <button class="btn btn-sm btn-warning mx-1 fw-bold p-2" type="submit">SIGN UP NOW</button>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid pt-5 my-5">
+      <div class="row p-5 m-auto">
+        <div class="col-sm-7 align-self-center">
+            <div class="row mb-2">
+              <h5>Effortless Validation for</h5>
+              <h1 class="fs-1 fw-bold mb-4">Design Professionals</h1>
+              <h5 class="mb-4">The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person. </h5>
+
+              <h5 class="fw-bold mb-2">Accessory makers</h5>
+              <h5 class="mb-4">While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</h5>
+              <h5 class="fw-bold mb-2">Alterationists</h5>
+              <h5 class="mb-4">If you are looking for a new way to promote your business that won’t cost you more money, </h5>
+              <h5 class="fw-bold mb-2">Custom Design designers</h5>
+              <h5 class="mb-4">If you are looking for a new way to promote your business that won’t cost you more money, </h5>
+            </div>
+        </div>
+        <div class="col-sm align-self-center my-3 ms-4">
+          <img src="img/Image.png" class=" img-fluid" alt="...">
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid pt-5 my-5">
+      <div class="row p-5 m-auto">
+        <div class="col-sm align-self-center my-3">
+          <img src="img/Image-1.png" class=" img-fluid" alt="...">
+        </div>
+        <div class="col-sm-7 align-self-center ms-5">
+            <div class="row mb-2">
+              <h5>Easier decision making for</h5>
+              <h1 class="fs-1 fw-bold mb-4">Product Managers</h1>
+              <h5 class="col mb-4">The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person. </h5>
+              <div class="row mb-4 align-items-center">
+                <i class="fa fa-check rect"></i>
+                <h5 class="col">Never worry about overpaying for your energy again. </h5>
+              </div>
+              <div class="row mb-4 align-items-center">
+                <i class="fa fa-check rect"></i>
+                <h5 class="col">We will only switch you to energy companies that we trust and will treat you right</h5>
+              </div>
+              <div class="row mb-4 align-items-center">
+                <i class="fa fa-check rect"></i>
+                <h5 class="col">We track the markets daily and know where the savings are.</h5>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid pt-5 my-5">
+      <div class="row p-5 m-auto">
+        <div class="col-sm-7 align-self-center">
+            <div class="row mb-2">
+              <h5>Optimisation for</h5>
+              <h1 class="fs-1 fw-bolder mb-4">Marketers</h1>
+              <h5 class="mb-4">Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. </h5>
+
+              <h5 class="fw-bolder mb-2">Accessory makers</h5>
+              <h5 class="mb-4">While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</h5>
+              <h5 class="fw-bolder mb-2">Alterationists</h5>
+              <h5 class="mb-4">If you are looking for a new way to promote your business that won’t cost you more money, </h5>
+              <h5 class="fw-bolder mb-2">Custom Design designers</h5>
+              <h5 class="mb-4">If you are looking for a new way to promote your business that won’t cost you more money, </h5>
+            </div>
+        </div>
+        <div class="col-sm align-self-center my-3 ms-4">
+          <img src="img/Image2.png" class=" img-fluid" alt="...">
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid py-5 ps-sm-5 part5 mb-5">
+      <div class="row justify-content-center pb-5">
+        <div class="col-4 d-none d-lg-block ps-5 ms-5">
+          <div class="rounded-pill bg-white">I can help marketing strategy</div>
+          <div class="circle bg-white"></div>
+          <div class="circle2 bg-white"></div>
+          <img src="img/Avator.png"></div>
+        <div class="col-4 pb-2 d-none d-lg-block">
+          <div class="rounded-pill bg-white">I can take care of your pitch</div>
+          <div class="circle bg-white"></div>
+          <div class="circle2 bg-white"></div>
+          <img src="img/Avator(1).png"></div>
+      </div>
+      <h1 class="row fs-1 fw-bolder mt-5 mb-4 justify-content-center">Need a super hero?</h1>
+      <div class="row justify-content-center blue text-center">Do you require some help for your project: Conception workshop,<br>prototyping, marketing strategy, landing page, Ux/UI?</div>
+      <div class="row justify-content-center"><button class="btn btn-sm btn-warning my-4 fw-bold p-3" type="submit">Contact our expert</button></div>
+      <div class="row justify-content-evenly ms-5 pb-5 ">
+        <div class="col d-none d-lg-block">
+          <div class="rounded-pill bg-white px-1">I can design you website</div>
+          <div class="circle bg-white"></div>
+          <div class="circle2 bg-white"></div>
+          <img class="align-text-bottom" src="img/Avator(2).png"></div>
+        <div class="col pt-5 d-none d-lg-block">
+          <div class="rounded-pill bg-white px-1">I will define the profile of your users</div>
+          <div class="circle bg-white"></div>
+          <div class="circle2 bg-white"></div>
+          <img class="align-text-bottom" src="img/Avator(3).png">
+        </div>
+        <div class="col d-none d-lg-block">
+          <div class="rounded-pill bg-white px-1">I can prototype your app</div>
+          <div class="circle bg-white"></div>
+          <div class="circle2 bg-white"></div>
+          <img class="align-text-bottom" src="img/Avator(4).png">
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-5 container">
+      <div class="row ps-5">
+        <h1 class="fw-bold">Marketing Strategies</h1>
+        <h5>Join 40,000+ other marketers and get proven strategies on email marketing</h5>
+      </div>
+      <div class="row slides">
+        <div class="col-1 align-self-center text-end pe-2 m-0"><i class="fa fa-arrow-left"></i></div>
+        <div class="col card ps-0" style="width: 18rem;">
+          <img src="img/Bitmap1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">
+              <h6 class="text-secondary">By Abdullah |  03 March 2019</h6>
+              <h5 class="fw-bold d-none d-md-block">Increasing Prosperity With Positive Thinking</h5>
+              <h6 class="fw-bold d-block d-md-none">Increasing Prosperity With Positive Thinking</h6></p>
+          </div>
+        </div>
+        <div class="col card" style="width: 18rem;">
+          <img src="img/Bitmap2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">
+              <h6 class="text-secondary">By Abdullah |  03 March 2019</h6>
+              <h5 class="fw-bold orangeC d-none d-md-block">Increasing Prosperity With Positive Thinking</h5>
+              <h6 class="fw-bold d-block d-md-none orangeC">Increasing Prosperity With Positive Thinking</h6></p>
+          </div>
+        </div>
+        <div class="col card" style="width: 18rem;">
+          <img src="img/Bitmap3.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">
+              <h6 class="text-secondary">By Abdullah |  03 March 2019</h6>
+              <h5 class="fw-bold d-none d-md-block">Increasing Prosperity With Positive Thinking</h5>
+              <h6 class="fw-bold d-block d-md-none">Increasing Prosperity With Positive Thinking</h6>
+            </p>
+          </div>
+        </div>
+        <div class="col-1 align-self-center p-0 m-0"><i class="fa fa-arrow-right"></i></div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center py-5">
+      <div class="line"></div>
+    </div>
+    <div class="container pb-5 ms-3 px-5">
+      <div class="row justify-content-center">
+        <div class="col-lg col-sm-12 text-center align-self-top fw-bold pb-sm-3">
+          <img src="img/Bitmap.png" alt="" width="30" height="24" class="d-inline-block align-text-top me-1">GrowWithMe</a>
+        </div>
+        <div class="col-lg col-sm-6 text-lg-start text-sm-center align-self-lg-center">
+          <div><button class="btn " type="submit">About Us</button></div>
+          <div><button class="btn" type="submit">Blog</button></div>
+          <div><button class="btn" type="submit">Contact</button></div>
+          <div><button class="btn" type="submit">FAQ</button></div>
+        </div>
+        <div class="col-lg col-sm-6 text-lg-start text-sm-center align-self-lg-center">
+          <div><button class="btn" type="submit">Disclaimer</button></div>
+          <div><button class="btn" type="submit">Financing</button></div>
+          <div><button class="btn" type="submit">Privacy Policy</button></div>
+          <div><button class="btn" type="submit">Terms of Service</button></div>
+        </div>
+        <div class="col-lg col-sm-4 text-lg-start text-sm-center align-self-lg-center">
+          <input class="mb-2 pb-1 input-group rounded border " type="text">
+          <button class="btn btn-warning btn-sm mt-1 " type="submit">Sign up Now</button>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+  </div>
+  </body>
+</html>
